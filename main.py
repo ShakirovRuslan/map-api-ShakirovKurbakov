@@ -14,6 +14,7 @@ class AppMainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi("data/map-ui.ui", self)
+        self.setFixedSize(700, 500)
 
         self.pushButton.clicked.connect(self.show_map)
 
